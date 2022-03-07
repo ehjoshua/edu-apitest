@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "edu-apitest"
+version = "0.1.0"
+description = ""
+authors = ["Joshua <joshua.zcx@outlook.com>"]
+license = "apache-2.0"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pytest = "^7.0.1"
+requests = "^2.27.1"
+
+[tool.poetry.dev-dependencies]
+coverage = "^6.3.2"
+coveralls = "^3.3.1"
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "http://mirrors.aliyun.com/pypi/simple"
+default = true
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+#设置poetry包管理工具的自定义pypi镜像源配置
